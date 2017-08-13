@@ -1,5 +1,5 @@
 /****************************************************************************** 
- *  Purpose: Conversion of temperature from farenheit to celcius.
+ *  Purpose: Conversion of temperature from farenheit to celcius and vice versa.
  *
  *  @author  Qais Bubere
  *  @version 1.0

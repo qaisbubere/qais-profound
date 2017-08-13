@@ -1,5 +1,5 @@
 /****************************************************************************** 
- *  Purpose: Determines, the given date falls on which day of the week.
+ *  Purpose: converts the given degree into radians and then perform various trignometric 		     operations.
  *
  *  @author  Qais Bubere
  *  @version 1.0
