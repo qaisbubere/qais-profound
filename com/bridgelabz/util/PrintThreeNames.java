@@ -6,10 +6,6 @@
  *  @since   08-08-2017
  *
  ******************************************************************************/
-
- /*
- *import statements
- */
 import java.util.Scanner;
 
 public class PrintThreeNames
@@ -18,19 +14,14 @@ public class PrintThreeNames
 	public static void main(String args[])
 	{
 		
-	Scanner s = new Scanner (System.in);
+	Scanner Name = new Scanner (System.in);
 		
-	/*
-	* Accept three strings from user
-	*/
 	System.out.println("Enter three names:");
-	String S1 = s.next();
-	String S2 = s.next();
-	String S3 = s.next();
+	String Name1 = Name.next();
+	String Name2 = Name.next();
+	String Name3 = Name.next();
 		
-	/*
-	* Print string in reverse format
-	*/
-	System.out.println("Hi\t"+S3+"\t "+S2+"\t"+S1);
+
+	System.out.println("Hi\t"+Name3+"\t "+Name2+"\t"+Name1);
 	}
 }

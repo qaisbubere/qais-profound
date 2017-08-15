@@ -11,16 +11,11 @@ public class PowerOf2
 {
 	public static void main(String args[])
 	{
-	int n = Integer.parseInt(args[0]);
-		
-	int i= 0;
+	int Number = Integer.parseInt(args[0]);	
+	int i = 0;
 	int PowerOfTwo = 1;
 		
-
-	/*
-	* prints power of 2 for numbers
-	*/
-	while (i <= n)
+	while (i <= Number)
 	{
 		System.out.println(i+ " " +PowerOfTwo);
 		PowerOfTwo = 2 * PowerOfTwo;

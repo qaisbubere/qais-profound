@@ -7,27 +7,19 @@
  *
  ******************************************************************************/
 
- /*
- *import statements
- */
+
 import java.util.*;
 
 public class TemperatureConversion
 {
 	public static void main(String args[])
 	{
-	double mTemperatureConverted;
-	
-	/*
-	* accept temperature in farenheit from user
-	*/
-	System.out.println("enter temperature in farenheit");
+
 	double mTemperatureFarenheit = Double.parseDouble(args[0]);
 	
-	/*
-	* formula for temperature conversion from farenheit to celcius
-	*/ 
-	mTemperatureConverted = ((mTemperatureFarenheit - 32) / 1.8);
-	System.out.println("temperature in celcius is " + mTemperatureConverted);
+	double mToCelcius = ((mTemperatureFarenheit - 32) / 1.8);
+	double mToFarenheit = ((mToCelcius * 1.8) + 32);
+	System.out.println("temperature in celcius is " + mToCelcius);
+	System.out.println("temperature in farenheit is " +mToFarenheit);
 	}
 }

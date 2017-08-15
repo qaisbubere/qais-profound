@@ -7,21 +7,43 @@
  *
  ******************************************************************************/
 
+import java.util.Scanner;
+
 public class FlipCoin
 {
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
-	//math.random() returns a value between 0.0 to 1.0
-	// so it is heads or tails 50% of the time
-	
-	/*
-	* 1 or 0 gives head, and between that gives tails
-	*/
-
-	if(Math.random() < 0.5)
+		
+	Scanner scanner = new Scanner(System.in);
+	float NumberOfFlips = 0, headcounter = 0;
+	float tailcounter=0;
+		
+	System.out.println("Press 1 if you want to flip the coin ");
+	int Flip = scanner.nextInt();
+		
+	while(Flip == 1)
+	{
+		if(Math.random()<0.5) 
+		{
+		headcounter++;
 		System.out.println("Heads");
-	
-	else
-		System.out.println("tails");
+		}
+		else
+		{
+		tailcounter++;
+		System.out.println("Tails");
+		}
+
+		NumberOfFlips++;
+        	System.out.println("Do you want to flip the coin again then press 1 otherwise press any other number than 1 ");	
+		Flip = scanner.nextInt();
 	}
+	
+	float PercentageOfHead = (headcounter/NumberOfFlips)*100;
+	System.out.println("percentage of head is "+PercentageOfHead);
+	float PercentageOfTail = (100 - PercentageOfHead);
+	//(tailcounter/NumberOfFlips)*100;
+	System.out.println("percentage of tail is "+PercentageOfTail);
+		
+  	}
 }

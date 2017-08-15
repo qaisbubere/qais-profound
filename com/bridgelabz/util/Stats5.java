@@ -7,40 +7,32 @@
  *  @since  10-08-2017
  *
  ******************************************************************************/
-
-
-/*
- *Calculating average,minimum and maximum of randomly generated values
- */
 import java.util.Random;
 
-public class Stats5 {
+public class Stats5 
+{
       
-    public static void main(String args[]) {
-        
-        //Declaring array for storing random values
+    	public static void main(String args[]) 
+	{
+       
         double[] number = new double[5];
-
-        //Declaring sum to calculate the sum of generated 5 random values
         double sum = 0;
 
-        //Generate and print 5 Numbers between 0 and 1
-        for(int i=0;i<5;i++) {
-           
-           //Accepting and storing random values in array
-           number[i] = Math.random();
+      
+        for(int i=0;i<5;i++) 
+	{           
+        number[i] = Math.random();
         }
 
-        //Printing the 5 random values stored in array and calculating the sum
-        for(int i = 0; i<=4;i++) {
-            System.out.println(number[i]);
-            sum=sum+number[i];
+        
+        for(int i = 0; i<=4;i++) 
+	{
+        System.out.println(number[i]);
+        sum = sum+number[i];
         }
         
-        //Displaying the Sum
-        System.out.println("The Sum of 5 random value = "+sum);
-
-        //Calculating the largest and smallest
+        
+        System.out.println("The Sum of 5 random value = " +sum);
         double largest = Math.max(number[0],Math.max(number[1],Math.max(number[2],Math.max(number[3],number[4]))));
         double smallest =Math.min(number[0],Math.min(number[1],Math.min(number[2],Math.min(number[3],number[4])))); 
 

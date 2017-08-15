@@ -10,21 +10,15 @@
 public class RandomSeq 
 {
 
-  public static void main(String args[])
-  {
+	public static void main(String args[])
+  	{
 
-    int inputNo = Integer.parseInt(args[0]);
+    	int inputNumber = Integer.parseInt(args[0]);
 
-      for(int i=0;i<10;i++)
-       
+      	for(int i=0; i<100; i++)  
         {
+        System.out.println(Math.random());             
+	}
 
-	/* 
-	* random sqeuence by random function
-	*/
-           System.out.println(Math.random());
-             
-		}
-
-  }
+  	}
 }

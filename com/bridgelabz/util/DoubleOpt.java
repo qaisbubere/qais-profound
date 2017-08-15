@@ -9,26 +9,24 @@
 
 class DoubleOpt 
 {
+
      public static void main(String[] args) 
 	 
 	{
-		double a = Double.parseDouble(args[0]);
-		double b = Double.parseDouble(args[1]);
-		double c = Double.parseDouble(args[2]);
+	 double a = Double.parseDouble(args[0]);
+	 double b = Double.parseDouble(args[1]);
+	 double c = Double.parseDouble(args[2]);
  
+	
+        double mResult1 = (a + b * c);
+        double mResult2 = (a * b + c);
+        double mResult3 = (a % b + c); 
 
-	/*
-	* three operation 
-	*/
-        double result1 = (a + b * c);
-        double result2 = (a * b + c);
-        double result3 = (a % b + c); 
+	System.out.println("result of " +a+ " + " +b+ " * " +c+ " = " +mResult1);
 
-		System.out.println("result of " +a+ " + " +b+ " * " +c+ " = " +result1);
-
-		System.out.println("result of " +a+ " * " +b+ " + " +c+ " = " +result2);
+	System.out.println("result of " +a+ " * " +b+ " + " +c+ " = " +mResult2);
    
-		System.out.println("result of " +a+ " % " +b+ " + " +c+ " = " +result3);     
+	System.out.println("result of " +a+ " % " +b+ " + " +c+ " = " +mResult3);     
   
     }
   }

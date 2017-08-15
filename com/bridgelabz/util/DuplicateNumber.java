@@ -7,38 +7,34 @@
  *
  ******************************************************************************/
 
- 
-
 import java.util.Scanner;
 
 public class DuplicateNumber
 {
 		
-	public static void main(String[]args)
+	public static void main(String[] args)
 	{
-		Scanner s = new Scanner (System.in);
+		Scanner scanner = new Scanner (System.in);
 		
-		//define array for storing the nos
-		int a[]=new int[100];
+		
+		int array[] = new int[100];
 		System.out.println("Enter the no. of elements:");
-		int no=s.nextInt();
-		System.out.println("Enter the elements of array:");
-		
+		int mNumber = scanner.nextInt();
 
-		//store the elements of array
+		System.out.println("Enter the elements of array:");
 		for(int i=0;i<no;i++)
 		{
-			a[i]=s.nextInt(); 
+			array[i] = scanner.nextInt(); 
 		}
 		
-		//compare and checking of duplicate number
+		
 		for(int i=0;i<no;i++)
 		{
 			for(int j=i+1;j<no;j++)
 			{	
-				if(a[i]==a[j])
+				if(array[i] == array[j])
 				{
-					System.out.println(a[j]+ " is a duplicte no.");
+				System.out.println(array[j]+ " is a duplicte no.");
 				}
 			}
 		}	

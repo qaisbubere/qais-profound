@@ -7,36 +7,27 @@
  *
  ******************************************************************************/
 
- /*
- *import statements
- */
- import java.util.*;
+
+import java.util.*;
 
 public class DayOfWeek
 {
 	public static void main(String args[])
 	{
-		int x , y1 , m1 , d1;
+	int x , y1 , m1 , d1;
 		
-	/*
-	* three command line arguments bring accepted from user: month, day, and year
-	*/		
+			
 	int mMonth = Integer.parseInt(args[0]);
 	int mDay   = Integer.parseInt(args[1]);
 	int mYear  = Integer.parseInt(args[2]);
 		
 		
-	/* 
-	* calculations of year, leap year, month, and day ,respectively
-	*/
-	y1 = mYear - (14-mMonth) / 12;
-	x  = y1 + y1 / 4-y1 / 100+y1 / 400;
-	m1 = mMonth + 12 * ((14-mMonth)/12) -2;
-	d1 =(mDay+x+(31*m1) / 12) % 7;
+	
+	y1 = mYear - (14 - mMonth) / 12;
+	x  = y1 + y1 / 4 - y1 / 100 + y1 / 400;
+	m1 = mMonth + 12 * ((14 - mMonth) / 12) - 2;
+	d1 = (mDay + x + (31*m1) / 12) % 7;
 		
-	/*
-	* switch case for different answers
-	*/
 
 	switch(d1)
 	{

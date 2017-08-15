@@ -7,26 +7,21 @@
  *
  ******************************************************************************/
 
-package com.bridgelabz.util;
-/*
-* Generate Runtime Error
-*/
 
-blic class LangError {
+public class LangError 
+{
 
-  public static void main(String args[]) {
+	public static void main(String args[]) 
+	{
 
-    String a= "hello";
-
-        //Calling a method
+    	String a= "hello";     
         String call = errorFunction(a);
         System.out.println(call);
-    }
+    	}
 
-    /** returns the minimum of two numbers */
-    public static String eFunction(String x) {
-      String y = new String();
-      
-      return y; 
-  }
+   	public static String eFunction(String x) 
+	{
+      	String y = new String();
+      	return y; 
+  	}
 }

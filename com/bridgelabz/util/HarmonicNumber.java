@@ -8,25 +8,19 @@
  ******************************************************************************/
 public class HarmonicNumber
 {
-
-  public static void main(String args[])
+	public static void main(String args[])
   {
-
-    int inputNo=Integer.parseInt(args[0]);
+	int InputNumber=Integer.parseInt(args[0]);
     
-
-	/*
-	* harmonic 
-	*/
-      for( int i=1; i<=inputNo; i++)
-       {
+      	for( int i=1; i<=InputNumber; i++)
+       	{
          System.out.print("1/"+i);
    
-       if(i<inputNo)
-      {
-      System.out.print(" + ");
-      }
-       }
+       		if(i < InputNumber)
+      		{
+      		System.out.print(" + ");
+      		}
+       	}
    }
  }
    

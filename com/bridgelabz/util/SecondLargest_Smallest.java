@@ -12,37 +12,32 @@ public class SecondLargest_Smallest
 {
     public static void main(String[] args) 
     {
-        int n, temp;
-        Scanner s = new Scanner(System.in);
+        int temp;
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter no. of elements you want in array:");
-        n = s.nextInt();
+        int Number = scanner.nextInt();
 
-	/*
-	*array initialized	
-	*/
-        int a[] = new int[n];
+	
+        int array[] = new int[Number];
         System.out.println("Enter all the elements:");
         for (int i = 0; i < n; i++) 
         {
-            a[i] = s.nextInt();
+            array[i] = scanner.nextInt();
         }
 
-	/* 
-	*arranging elements in ascending order
-	*/
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < Number; i++) 
         {
-            for (int j = i + 1; j < n; j++) 
+            for (int j = i + 1; j < Number; j++) 
             {
-                if (a[i] > a[j]) 
+                if (array[i] > array[j]) 
                 {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
                 }
             }
         }
-        System.out.println("Second Largest:"+a[n-2]);
-        System.out.println("Second Smallest:"+a[1]);
+        System.out.println("Second Largest:"+array[Number-2]);
+        System.out.println("Second Smallest:"+array[1]);
     }
 }
